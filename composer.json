@@ -1,6 +1,6 @@
 {
     "name": "ws_public_resource/project_required_file",
-    "description": "项目所需文件",
+    "description": "文始公共资源 项目所需文件插件",
     "authors": [
         {
             "name": "Temple Chan",
@@ -9,17 +9,20 @@
     ],
     "license": "MIT",
     "require": {
-        "php": ">=7.0"
+        "php": ">=7.0",
+        "epii/admin-center": ">=0.0.1"
     },
     "autoload": {
         "psr-4": {
             "ws_public_resource\\project_required_file\\": "src/"
         }
     },
-    "repositories": {
-        "packagist": {
-            "type": "composer",
-            "url": "https://mirrors.aliyun.com/composer/"
+    "extra": {
+        "epii_admin_addons": {
+            "app": "ws_public_resource\\project_required_file\\App",
+            "title": "文始公共资源 项目所需文件插件",
+            "version": "0.0.1",
+            "base_name_space": "ws_public_resource\\project_required_file\\app"
         }
     }
 }

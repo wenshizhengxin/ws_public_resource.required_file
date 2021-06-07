@@ -31,10 +31,10 @@
 <div class="content">
     <div class="card-body table-responsive" style="padding-top: 0px">
         <a class="btn btn-outline-primary btn-table-tool btn-dialog" data-intop="1" data-area="50%,70%" title="新增"
-           href="?app=required_file_group@add">新增</a>
+           href="?app=required_file_group@add&__addons={$__addons}">新增</a>
     </div>
     <div class="card-body table-responsive" style="padding-top: 0px">
-        <table data-table="1" data-url="?app=required_file_group@ajax_data" id="table1" class="table table-hover">
+        <table data-table="1" data-url="?app=required_file_group@ajax_data&__addons={$__addons}" id="table1" class="table table-hover">
             <thead>
             <tr>
                 <th data-field="file_name">文件组名称</th>
@@ -44,9 +44,9 @@
                     data-intop="1"
                     data-area="50%,70%"
                     data-btns="edit,del"
-                    data-edit-url="?app=required_file_group@add&id={id}"
+                    data-edit-url="?app=required_file_group@add&id={id}&__addons={$__addons}"
                     data-edit-title="编辑"
-                    data-del-url="?app=required_file_group@del&id={id}"
+                    data-del-url="?app=required_file_group@del&id={id}&__addons={$__addons}"
                     data-del-title="删除"
                 >操作
                 </th>

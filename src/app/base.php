@@ -17,7 +17,7 @@ use epii\admin\ui\lib\epiiadmin\jscmd\JsCmd;
 use epii\admin\ui\lib\epiiadmin\jscmd\Refresh;
 use epii\server\Tools;
 use epii\template\engine\EpiiViewEngine;
-use wenshizhengxin\preview_photo_maker\libs\Constant;
+use ws_public_resource\project_required_file\libs\Constant;
 
 class base extends admin_center_addons_controller
 {
