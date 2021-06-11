@@ -79,6 +79,8 @@ class required_file extends base
                     $required_file = Db::name('required_file')->where('id', $id)->find();
                     $this->assign('required_file', $required_file);
                 }
+                $statusOptions = [['id' => Constant::STATUS_GROUP_ACTIVE, 'name' => '启用'], ['id' => Constant::STATUS_GROUP_INACTIVE, 'name' => '禁用']];
+                $this->assign('statusOptions', $statusOptions);
 
                 $this->adminUiDisplay();
             }

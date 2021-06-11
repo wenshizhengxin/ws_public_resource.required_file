@@ -80,6 +80,9 @@ class required_file extends base
                     $this->assign('required_file', $required_file);
                 }
 
+                $statusOptions = [['id' => Constant::STATUS_FILE_ACTIVE, 'name' => '启用'], ['id' => Constant::STATUS_FILE_INACTIVE, 'name' => '禁用']];
+                $this->assign('statusOptions', $statusOptions);
+
                 $this->adminUiDisplay();
             }
         } catch (\Exception $e) {

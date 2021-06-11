@@ -31,7 +31,7 @@ class App extends AddonsApp
         }
 
         // 添加菜单及子菜单
-        $pid = $this->addMenuHeader("项目所需文件");
+        $pid = $this->addMenuHeader("项目所需文件", 'fa-file-pdf-o');
         if (!$pid) {
             return false;
         }

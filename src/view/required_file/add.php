@@ -14,7 +14,9 @@
     </div>
     <div class="form-group">
         <label>状态：</label>
-        <select class="selectpicker" name="status"></select>
+        <select class="selectpicker" name="status">
+            {:options,$statusOptions,$required_file['status']?}
+        </select>
     </div>
     <div class="form-footer">
         <input type="hidden" name="id" value="{$required_file['id'] ? 0}">
